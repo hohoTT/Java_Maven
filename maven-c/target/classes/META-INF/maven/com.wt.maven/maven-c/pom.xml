@@ -24,15 +24,14 @@
 
 		<dependency>
 			<groupId>com.wt.maven</groupId>
+			<artifactId>maven-b</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>com.wt.maven</groupId>
 			<artifactId>maven-a</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
-			<exclusions>
-				<exclusion>
-					<groupId>com.wt.maven</groupId>
-					<artifactId>maven-b</artifactId>
-					<version>0.0.1-SNAPSHOT</version>
-				</exclusion>
-			</exclusions>
 		</dependency>
 	</dependencies>
 </project>
