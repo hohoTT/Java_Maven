@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [02/Jun/2016:19:07:34 +0800] "GET /maven-webDemo HTTP/1.1" 302 - http-bio-8080-exec-1 0
+0:0:0:0:0:0:0:1 - - [02/Jun/2016:19:07:35 +0800] "GET /maven-webDemo/ HTTP/1.1" 200 46 http-bio-8080-exec-2 686

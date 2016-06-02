@@ -21,12 +21,33 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.1.0</version>
-			<!-- 只在编译时和测试时运行   -->
+			<!-- 只在编译时和测试时运行 -->
 			<scope>provided</scope>
 		</dependency>
 
 	</dependencies>
 	<build>
 		<finalName>maven-webDemo</finalName>
+
+		<plugins>
+
+			<!-- 以下为嵌入Tomcat服务器 -->
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+
+				<!-- 以下的配置为在打包成功后使用tomcat:run来运行tomcat服务 -->
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
 	</build>
 </project>
