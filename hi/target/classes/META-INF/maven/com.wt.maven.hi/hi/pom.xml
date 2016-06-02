@@ -1,25 +1,93 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
-  <groupId>com.wt.maven.hi</groupId>
-  <artifactId>hi</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>jar</packaging>
+	<!-- 指定了当前 pom 的版本 -->
+	<modelVersion>4.0.0</modelVersion>
 
-  <name>hi</name>
-  <url>http://maven.apache.org</url>
+	<!-- 组织名，公司网址的反写+项目名 -->
+	<groupId>com.wt.maven.hi</groupId>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+	<!-- 项目名-模块名 -->
+	<artifactId>hi</artifactId>
 
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-  </dependencies>
+	<!-- 版本号 -->
+	<!-- 第一个 0 表示大版本号 第二个 0 表示分支版本号 第三个 0 表示小版本号 0.0.1-SNAPSHOT SNAPSHOT 快照 
+		alpha 内部测试 beta 公测 Rlease 稳定 GA 正式发布 -->
+	<version>0.0.1-SNAPSHOT</version>
+
+	<!-- maven 的打包方式 -->
+	<!-- 默认是 jar 还有 war、zip、pom 的方式 -->
+	<packaging>jar</packaging>
+
+	<!-- 项目的描述名 -->
+	<name>hi</name>
+
+	<!-- 项目的地址 -->
+	<url>http://maven.apache.org</url>
+
+	<!-- 项目的描述 -->
+	<description></description>
+
+	<!-- 项目的开发人员 -->
+	<developers></developers>
+
+	<!-- 项目的使用开源框架的许可证信息 -->
+	<licenses></licenses>
+
+	<!-- 项目的组织信息 -->
+	<organization></organization>
+
+	<!-- 项目的 -->
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<!-- 项目的依赖列表 -->
+	<dependencies>
+
+		<!-- 项目的依赖项，可含有多个 -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<!-- 依赖的使用范围，test表示只在测试时有效 -->
+			<scope>test</scope>
+
+			<!-- 设置依赖是否可选，值含有true和false两种，默认的选项为false -->
+			<optional></optional>
+
+			<!-- 排除依赖的传递列表 -->
+			<exclusions>
+				<exclusion>
+				</exclusion>
+			</exclusions>
+		</dependency>
+	</dependencies>
+
+	<!-- 依赖的管理 -->
+	<dependencyManagement>
+		<!-- 依赖列表，主要应用到父模块中 -->
+		<dependencies></dependencies>
+	</dependencyManagement>
+
+	<!-- -->
+	<build>
+		<!-- 插件列表 -->
+		<plugins>
+			<plugin>
+				<groupId></groupId>
+				<artifactId></artifactId>
+				<version></version>
+			</plugin>
+		</plugins>
+	</build>
+	
+	<!--  -->
+
+	<!-- 聚合 maven 块 -->
+
+	<!-- <build> <plugins> <plugin> <groupId>org.apache.maven.plugins</groupId> 
+		<artifactId>maven-source-plugin</artifactId> <version>2.4</version> <executions> 
+		<execution> <phase>package</phase> <goals> <goal>jar-no-fork</goal> </goals> 
+		</execution> </executions> </plugin> </plugins> </build> -->
 </project>
