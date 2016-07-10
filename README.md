@@ -4,17 +4,17 @@
 
 ## 以下介绍的为 MAVEN 工程的基本目录结构
 
-src 
-	-main
-		-java
-			-package
-	-test
-		-java
-			-package
-	resources
-	
-groupId 就是项目的包名
-artifactId 是模块名
+	src 
+		-main
+			-java
+				-package
+		-test
+			-java
+				-package
+		resources
+		
+	groupId 就是项目的包名
+	artifactId 是模块名
 
 
 
