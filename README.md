@@ -55,7 +55,6 @@ archetype 插件
 配置 -Dmaven.multiModuleProjectDirectory=$M2_HOME  注意此时的 JDK 版本需要设置为1.7的版本，1.8的版本会报错 
 
 
-
 ## MAVEN 工程依赖部分的讲述
 
 依赖的第一部分讲解：
