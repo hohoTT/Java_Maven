@@ -82,3 +82,5 @@ maven-c 中使用的版本为 2.0
 依赖的继承：
 实现maven项目中的依赖继承关系，创建一个父maven项目maven-parent，使得maven-b继承与maven-parent，实现代码的复用
 
+
+
