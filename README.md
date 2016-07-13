@@ -160,3 +160,32 @@ plexus相关jar包
 
 	</plugins>
 </build>
+
+
+## maven 创建的web工程需要修改 web.xml中的 servlet的版本
+
+修改 maven web 工程默认的jdk版本
+
+<profile>
+	
+	  <id>jdk-1.7</id>
+
+	  <activation>
+
+			 <activeByDefault>true</activeByDefault>
+
+			 <jdk>1.7</jdk>
+
+	  </activation>
+
+	  <properties>
+
+			 <maven.compiler.source>1.7</maven.compiler.source>
+
+			 <maven.compiler.target>1.7</maven.compiler.target>
+
+			 <maven.compiler.compilerVersion>1.7</maven.compiler.compilerVersion>
+
+	  </properties>
+
+</profile>
