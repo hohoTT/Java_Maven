@@ -83,4 +83,16 @@ maven-c 中使用的版本为 2.0
 实现maven项目中的依赖继承关系，创建一个父maven项目maven-parent，使得maven-b继承与maven-parent，实现代码的复用
 
 
+创建maven的web项目工程所出现的错误
+
+1. Could not calculate build plan: Plugin 
+
+解决方法 \org\apache\maven\plugins目录下的文件夹全部删除，重新下载。
+
+
+2. Failure to transfer org.codehaus.plexus:plexus-archiver:jar:
+
+解决方法 网址 -----    http://blog.csdn.net/gao36951/article/details/46491405
+plexus相关jar包
+
 
