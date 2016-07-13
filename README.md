@@ -96,3 +96,67 @@ maven-c 中使用的版本为 2.0
 plexus相关jar包
 
 
+使用  tomcat  作为maven的服务器容器
+
+第一种方式
+
+<build>
+	<finalName>maven-webDemo</finalName>
+
+	<plugins>
+		<!-- 以下为嵌入Tomcat服务器   -->
+		<plugin>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.1</version>
+			<configuration>
+				<port>8080</port>
+				<path>/maven-webDemo</path>
+				<uriEncoding>UTF-8</uriEncoding>
+				<finalName>maven-webDemo</finalName>
+				<server>tomcat7</server>
+			</configuration>
+			
+			<!-- 以下的配置为在打包成功后使用tomcat:run来运行tomcat服务 -->
+			<executions>
+				<execution>
+					<phase>package</phase>
+					<goals>
+						<goal>run</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+
+	</plugins>
+</build>
+
+
+
+第二种方式
+
+
+<build>
+	<finalName>maven-webDemo</finalName>
+
+	<plugins>
+
+		<!-- 以下为嵌入Tomcat服务器 -->
+		<plugin>
+			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.2</version>
+
+			<!-- 以下的配置为在打包成功后使用tomcat:run来运行tomcat服务 -->
+			<executions>
+				<execution>
+					<phase>package</phase>
+					<goals>
+						<goal>run</goal>
+					</goals>
+				</execution>
+			</executions>
+		</plugin>
+
+	</plugins>
+</build>
