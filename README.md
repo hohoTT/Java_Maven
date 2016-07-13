@@ -189,3 +189,18 @@ plexus相关jar包
 	  </properties>
 
 </profile>
+
+
+## maven 配置文件中修改仓库的位置，修改为英国的仓库
+
+<mirror>
+
+  <id>UK</id>
+
+  <name>UK Central</name>
+
+  <url>http://uk.maven.org/maven2</url>
+
+  <mirrorOf>central</mirrorOf>
+
+</mirror>
