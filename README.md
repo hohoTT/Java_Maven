@@ -83,7 +83,7 @@ maven-c 中使用的版本为 2.0
 实现maven项目中的依赖继承关系，创建一个父maven项目maven-parent，使得maven-b继承与maven-parent，实现代码的复用
 
 
-创建maven的web项目工程所出现的错误
+## 创建maven的web项目工程所出现的错误
 
 1. Could not calculate build plan: Plugin 
 
@@ -96,7 +96,7 @@ maven-c 中使用的版本为 2.0
 plexus相关jar包
 
 
-使用  tomcat  作为maven的服务器容器
+## 使用  tomcat  作为maven的服务器容器
 
 第一种方式
 
