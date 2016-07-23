@@ -204,4 +204,3 @@ plexus相关jar包
   <mirrorOf>central</mirrorOf>
 
 </mirror>
-
